@@ -1,5 +1,20 @@
-function findFirstDuplicate(arr) {
-  // type your code here
+function findFirstDuplicate(inp) {
+  
+	let n = 0
+	let uniques = []
+	while (n < inp.length) {
+		if (!uniques.includes(inp[n])) {
+			uniques.push(inp[n])	
+			}
+		else { return inp[n] }
+		n += 1
+
+
+
+	}
+
+  return -1
+
 }
 
 if (require.main === module) {
